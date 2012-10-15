@@ -1,0 +1,42 @@
+$base-color: #F9ECD1
+$main-color: #5BC5BF
+$accent-color: #ED1D24
+$base-text-color: $base-color - 140
+
+$navbarBackgroundHighlight: $base-color
+$navbarBackground: $base-color
+$textColor: $base-text-color
+$bodyBackground: $base-color
+
+$heroUnitBackground: $main-color
+
+$btnPrimaryBackground: $accent-color
+$btnPrimaryBackgroundHighlight: adjust-hue($btnPrimaryBackground, 10%)
+
+$btnBackground: $base-color
+$btnBackgroundHighlight: darken($base-color, 10%)
+$btnBorder: darken($base-color, 10%)
+
+$navbarText: $base-text-color
+$navbarLinkColor: $base-text-color
+$navbarLinkColorHover: $base-text-color - 60
+$navbarLinkColorActive: darken($base-text-color, 5%)
+$navbarLinkBackgroundHover: $base-color - 10
+$navbarLinkBackgroundActive: darken($navbarBackground, 5%)
+$navbarBrandColor: $base-text-color
+
+$hrBorder: darken($base-color, 10%)
+
+
+$eyecatchBackground: $main-color
+
+body
+  padding: 60px 0 0 0
+
+@import bootstrap
+@import bootstrap-responsive
+@import compass/utilities
+@import compass/css3
+@import font-awesome
+@import sassy-buttons
+@import eyecatch

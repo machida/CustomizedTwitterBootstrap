@@ -1,0 +1,70 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title Bootstrap, from Twitter
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    %link{:href => "../assets/ico/favicon.ico", :rel => "shortcut icon"}
+    %link{:href => "../assets/ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+    %link{:href => "../assets/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+    %link{:href => "../assets/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+    %link{:href => "../assets/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Project name
+          .nav-collapse.collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#about"} About
+              %li
+                %a{:href => "#contact"} Contact
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Dropdown
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+                  %li
+                    %a{:href => "#"} Something else here
+                  %li.divider
+                  %li.nav-header Nav header
+                  %li
+                    %a{:href => "#"} Separated link
+                  %li
+                    %a{:href => "#"} One more separated link
+            %form.navbar-form.pull-right
+              %input.span2{:placeholder => "Email", :type => "text"}
+                %input.span2{:placeholder => "Password", :type => "password"}
+                  %button.btn{:type => "submit"} Sign in
+    /
+      #eyecatch
+        .container
+          .row
+            .title.span5
+              %h1 Hello, world!
+            .description.span7
+              %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+              %p
+                %a.btn.btn-primary.btn-large Learn more »
+    .container
+      = yield
+      %hr
+        %footer
+          %p &copy; Company 2012
