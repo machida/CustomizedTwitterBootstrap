@@ -15,7 +15,7 @@
     %link{:href => "../assets/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
     %link{:href => "../assets/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
     %link{:href => "../assets/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
-  %body
+  %body(class="#{controller_name} #{controller_name}_#{action_name}")
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
@@ -53,16 +53,8 @@
               %input.span2{:placeholder => "Email", :type => "text"}
                 %input.span2{:placeholder => "Password", :type => "password"}
                   %button.btn{:type => "submit"} Sign in
-    /
-      #eyecatch
-        .container
-          .row
-            .title.span5
-              %h1 Hello, world!
-            .description.span7
-              %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-              %p
-                %a.btn.btn-primary.btn-large Learn more »
+    -if %w(eyecatch).include? params["action"]
+      = render partial: 'eyecatch'
     .container
       = yield
       %hr

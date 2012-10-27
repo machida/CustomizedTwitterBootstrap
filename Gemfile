@@ -18,6 +18,7 @@ group :assets do
   gem 'compass-rails'
   gem 'sassy-buttons'
   gem 'font-awesome-sass-rails'
+  gem "compass-rgbapng", :require => "rgbapng"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

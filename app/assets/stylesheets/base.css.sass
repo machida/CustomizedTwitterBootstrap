@@ -1,21 +1,22 @@
-$base-color: #F9ECD1
-$main-color: #5BC5BF
-$accent-color: #ED1D24
-$base-text-color: $base-color - 140
+@import colors/background_image
 
-$navbarBackgroundHighlight: $base-color
-$navbarBackground: $base-color
 $textColor: $base-text-color
+
 $bodyBackground: $base-color
 
 $heroUnitBackground: $main-color
+$heroUnitHeadingColor: $hero-unit-text-color
+$heroUnitLeadColor: $hero-unit-text-color
 
 $btnPrimaryBackground: $accent-color
-$btnPrimaryBackgroundHighlight: adjust-hue($btnPrimaryBackground, 10%)
+$btnPrimaryBackgroundHighlight: adjust-hue($btnPrimaryBackground, 5%)
 
 $btnBackground: $base-color
 $btnBackgroundHighlight: darken($base-color, 10%)
 $btnBorder: darken($base-color, 10%)
+
+$navbarBackgroundHighlight: $base-color
+$navbarBackground: $base-color
 
 $navbarText: $base-text-color
 $navbarLinkColor: $base-text-color
@@ -27,11 +28,8 @@ $navbarBrandColor: $base-text-color
 
 $hrBorder: darken($base-color, 10%)
 
-
-$eyecatchBackground: $main-color
-
-body
-  padding: 60px 0 0 0
+$eyecatchBackground: $heroUnitBackground
+$eyecatchTextColor: $hero-unit-text-color
 
 @import bootstrap
 @import bootstrap-responsive
@@ -40,3 +38,9 @@ body
 @import font-awesome
 @import sassy-buttons
 @import eyecatch
+
+body
+  padding: 60px 0 0
+
+body.home_eyecatch
+  padding: 40px 0 0
