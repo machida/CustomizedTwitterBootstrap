@@ -14,7 +14,7 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'bootstrap-sass', :git => "git@github.com:machida/bootstrap-sass.git", branch: 'button-color'
+  gem 'bootstrap-sass', :git => "git@github.com:machida/bootstrap-sass.git", branch: 'master'
   gem 'compass-rails'
   gem 'sassy-buttons'
   gem 'font-awesome-sass-rails'

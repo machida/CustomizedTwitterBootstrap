@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:machida/bootstrap-sass.git
-  revision: 2e9527b02bebac25ed0d08cb66369ae3615d2cc7
-  branch: button-color
+  revision: 0c06fa390059631830f21e25b194f2f105602eaa
+  branch: master
   specs:
     bootstrap-sass (2.1.0.1)
 
